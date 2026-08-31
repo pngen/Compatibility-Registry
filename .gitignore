@@ -1,0 +1,8 @@
+build/
+build-debug/
+downstream/build/
+*.user
+*.suo
+.vs/
+CMakeUserPresets.json
+*.bin

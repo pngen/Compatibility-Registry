@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+include(CMakeFindDependencyMacro)
+if(@COMPAT_HAVE_CUDA@)
+    find_dependency(CUDAToolkit)
+endif()
+include("${CMAKE_CURRENT_LIST_DIR}/CompatibilityRegistryTargets.cmake")
+check_required_components(CompatibilityRegistry)
